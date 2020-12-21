@@ -5,8 +5,10 @@ from matplotlib import pyplot as plt
 
 
 def SIFT_feature_matching(img1, img2, n=1000):
-    t1 = cv2.imread(img1,0)
-    t2 = cv2.imread(img2,0)
+    #t1 = cv2.imread(img1,0)
+    #t2 = cv2.imread(img2,0)
+    t1 = img1
+    t2 = img2
 
     sift=cv.SIFT_create()
 

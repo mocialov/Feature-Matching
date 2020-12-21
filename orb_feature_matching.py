@@ -4,8 +4,10 @@ from matplotlib import pyplot as plt
 
 
 def orb_feature_matching(img1, img2, n=1000):
-    test1=cv2.imread(img1,0)
-    test2=cv2.imread(img2,0)
+    #test1=cv2.imread(img1,0)
+    #test2=cv2.imread(img2,0)
+    test1 = img1
+    test2 = img2
 
     orb = cv2.ORB_create()
 

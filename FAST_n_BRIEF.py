@@ -4,8 +4,10 @@ from matplotlib import pyplot as plt
 
 
 def FAST_n_BRIEF(img1, img2, n=1000, threshold=40):
-    test1=cv2.imread(img1,0)
-    test2=cv2.imread(img2,0)
+    #test1=cv2.imread(img1,0)
+    #test2=cv2.imread(img2,0)
+    test1 = img1
+    test2 = img2
     
     fast = cv2.FastFeatureDetector_create(threshold=threshold)
 
