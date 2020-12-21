@@ -54,9 +54,11 @@ def SIFT_KNN_BBS(img1, img2):
             if (a1 == x2 and b1 == y2) and (a2 == x1 and b2 == y1):
                 good.append(i)
 
-
+    #print (kp1, kp2, good)
     result=cv2.drawMatchesKnn(t1,kp1,t2,kp2,good,None,[0,0,255],flags=2)
 
-    plt.imshow(result, interpolation = 'bicubic')
-    plt.axis('off')
-    plt.show()
+    #plt.imshow(result, interpolation = 'bicubic')
+    #plt.axis('off')
+    #plt.show()
+
+    return kp1, kp2, good
